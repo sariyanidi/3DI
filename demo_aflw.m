@@ -20,16 +20,18 @@ for fi=1:length(files)
     % There are multiple reasons to why constraints may not be satisfied at
     % first try. One reason is that the we assume lens distortion to be 
     % negligible, and if it's not, the warping that it causes may not be 
-    % accurately reconstructed
+    % accurately reconstructed by the 3D morphable model. 
     for attempt=1:5
         clear result
         
         try
             tic
-            % The code that actually does the fitting
+            % The code that actually does the fitting is fit3dmm_to_image()
+            % 
             % The fitting parameters are stored in fit_params
             % Check the comments in the render_3dhead file to see how 
-            % what the fitting parameters mean
+            % the fitting parameters can be used to reconstruct 
+            % the dense 2D or 3D face shape as well as the facial landmarks
             [data, opts, fit_params, result, existed] = fit3dmm_to_image(fpath, bcoef, resize_coef);
             
             if ~existed

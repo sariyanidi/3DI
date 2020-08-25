@@ -1,3 +1,5 @@
+This is the code that runs the 3D face reconstrution method named 3DI and is introduced in the ECCV'20 paper titled "Inequality-Constrained and Robust 3D Face Model Fitting".
+
 To run the code on an image, you need to first extract 68 facial landmarks using the face_alignment library* and store the 2D landmarks as a .pts file next to the image; see the folder input/AFLW3D for examples on how the landmark file should be formatted. 
 
 You will also need the Basel 2009 face model and an expression model for it. The script data/create_combined_model.m shows how those can be obtained.
@@ -6,3 +8,11 @@ You can demo the code on the AFLW dataset which is partially provided with this 
 
 *See https://github.com/1adrianb/face-alignment
 
+If you use this code, please cite
+
+@article{sariyanidi_eccv20,
+  title={Inequality-Constrained and Robust 3D Face Model Fitting},
+  author={Sariyanidi, Evangelos and Zampella, Casey J and Schultz, Robert T and Tunc, Birkan},
+  booktitle={Proceedings of the European Conference on Computer Vision},
+  year={2020}
+}
