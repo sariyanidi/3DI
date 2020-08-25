@@ -1,0 +1,8 @@
+To run the code on an image, you need to first extract 68 facial landmarks using the face_alignment library* and store the 2D landmarks as a .pts file next to the image; see the folder input/AFLW3D for examples on how the landmark file should be formatted. 
+
+You will also need the Basel 2009 face model and an expression model for it. The script data/create_combined_model.m shows how those can be obtained.
+
+You can demo the code on the AFLW dataset which is partially provided with this software in order to demonstrate how the code runs. The main function of the code (fit3dmm_to_image) is provided in an encrypted format, but it is possible that it will be made open-source in the future.
+
+*See https://github.com/1adrianb/face-alignment
+
