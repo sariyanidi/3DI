@@ -1,14 +1,18 @@
-Repository for the 3D face reconstrution method named 3DI, introduced in ECCV'20 in the paper titled "Inequality-Constrained and Robust 3D Face Model Fitting".
+Repository of the 3DI method is currently maintained at the link below:
+[https://github.com/Computational-Psychiatry/3DI](https://github.com/Computational-Psychiatry/3DI)
 
-A new and CUDA-based version of the code is available here: http://www.sariyanidi.com/media/3DI_packageNone.zip
+If you use this code, please cite the work as below:
+```
+@ARTICLE {sariyanidi2024,
+author = {E. Sariyanidi and C. J. Zampella and R. T. Schultz and B. Tunc},
+journal = {IEEE Transactions on Pattern Analysis &amp; Machine Intelligence},
+title = {Inequality-Constrained 3D Morphable Face Model Fitting},
+year = {2024},
+volume = {46},
+number = {02},
+issn = {1939-3539},
+pages = {1305-1318},
+doi = {10.1109/TPAMI.2023.3334948},
+month = {Feb}
+}```
 
-We will start maintaining the CUDA code on this github, but in the meanwhile you can use the link above.
-
-If you use this code, please cite
-
-@article{sariyanidi_eccv20,
-  title={Inequality-Constrained and Robust 3D Face Model Fitting},
-  author={Sariyanidi, Evangelos and Zampella, Casey J and Schultz, Robert T and Tunc, Birkan},
-  booktitle={Proceedings of the European Conference on Computer Vision},
-  year={2020}
-}
